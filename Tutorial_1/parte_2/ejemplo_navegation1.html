@@ -1,0 +1,27 @@
+<html>
+
+<body>
+
+    <h1 id="id01">Hola</h1>
+    <p id="id02"></p>
+    <p id="id03"></p>
+    <p id="id04"></p>
+
+    <script>
+        //The element node <h1> (in the example above) does not contain text.
+        //It contains a text node with the value "DOM Tutorial". 
+        
+        document.getElementById("id02").innerHTML = document.getElementById("id01").firstChild.nodeValue;
+
+
+        //Accessing the innerHTML property is the same as accessing the nodeValue of the first child:
+        document.getElementById("id03").innerHTML = document.getElementById("id01").innerHTML;
+
+        //The same using with chileNodes
+        document.getElementById("id04").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;
+
+    </script>
+
+</body>
+
+</html>

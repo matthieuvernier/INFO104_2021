@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#757575;width:120px;height:20px;padding:40px;">
+Mouse?</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Mouse Over!"
+  obj.style.backgroundColor = "#45b65e"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Out!"
+  obj.style.backgroundColor = "#D94A38"
+}
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="addParagraph()">Agregar</button>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+
+
+
+    <script>
+
+        function addParagraph() {
+            let para = document.createElement("p");
+            let node = document.createTextNode("This is new.");
+            para.appendChild(node);
+            let element = document.getElementById("div1");
+            element.appendChild(para);
+        }
+    </script>
+
+</body>
+
+</html>
