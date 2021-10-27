@@ -1,0 +1,6 @@
+fastapi
+sqlalchemy
+uvicorn[standard]
+mysql.connector
+fastapi-pagination[sqlalchemy]
+unidecode
